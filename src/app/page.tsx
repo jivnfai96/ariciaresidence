@@ -14,12 +14,12 @@ import { Toaster } from 'react-hot-toast'
 export default function Home() {
   // Property interior images
   const interiorImages = [
-    "/images/facilities/facility1.png",
-    "/images/facilities/facility2.png",
-    "/images/facilities/facility3.png",
-    "/images/facilities/facility4.png",
-    "/images/facilities/facility5.png",
-    "/images/facilities/facility6.png"
+    "/images/facilities/Facility1.png",
+    "/images/facilities/Facility2.png",
+    "/images/facilities/Facility3.png",
+    "/images/facilities/Facility4.png",
+    "/images/facilities/Facility5.png",
+    "/images/facilities/Facility6.png"
   ]
 
    // Floor plan images (✅ updated to 5 images)
@@ -33,7 +33,7 @@ export default function Home() {
 
   // Facility images
   const facilityImages = [
-    "/images/facilities/Facility_plan.png",
+    "/images/facilities/Facility_Plan.png",
    
   ]
 
