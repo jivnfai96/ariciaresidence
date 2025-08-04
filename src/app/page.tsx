@@ -213,7 +213,7 @@ export default function Home() {
     </div>
     <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
       <img
-        src="/images/location map/site_view.png"
+        src="/images/location map/Site_View.png"
         alt="Location Map"
         className="w-full object-cover"
       />
@@ -340,7 +340,7 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-center text-gray-800 mb-12">Site Plan</h3>
             <div className="relative max-w-4xl mx-auto">
               <img
-                src="/images/logo/siteplan2.png"
+                src="/images/logo/Siteplan2.png"
                 alt="Site Plan"
                 className="w-full rounded-lg shadow-xl"
               />
@@ -361,7 +361,7 @@ export default function Home() {
               { icon: "🍳", title: "Kitchen Fitted By", subtitle: "SIGNATURE", image: "/images/logo/kitchen.png" },
               { icon: "👨‍👩‍👧‍👦", title: "Family-Friendly Residences", image: "/images/logo/family_friend.png" },
               { icon: "🐕", title: "Pet Friendly Facilities", image: "/images/logo/pets.png" },
-              { icon: "🌱", title: "GreenRE Certified Building", image: "/images/logo/green_re.png" }
+              { icon: "🌱", title: "GreenRE Certified Building", image: "/images/logo/GREEN_RE.png" }
             ].map((feature, index) => (
               <StaggeredItem key={index}>
                 <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover-scale group">
