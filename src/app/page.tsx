@@ -213,7 +213,7 @@ export default function Home() {
     </div>
     <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-xl">
       <img
-        src="/images/Location Map/Site_view.png"
+        src="/images/locationmap/site_view.png"
         alt="Location Map"
         className="w-full object-cover"
       />
