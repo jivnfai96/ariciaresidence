@@ -1,0 +1,32 @@
+import { NextResponse } from 'next/server'
+
+export async function GET() {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://ariciaresidence.com/</loc>
+      <priority>1.0</priority>
+    </url>
+    <url>
+      <loc>https://ariciaresidence.com/floor-plan</loc>
+    </url>
+    <url>
+      <loc>https://ariciaresidence.com/facilities</loc>
+    </url>
+    <url>
+      <loc>https://ariciaresidence.com/location</loc>
+    </url>
+    <url>
+      <loc>https://ariciaresidence.com/virtual-tour</loc>
+    </url>
+    <url>
+      <loc>https://ariciaresidence.com/project-info</loc>
+    </url>
+  </urlset>`
+
+  return new NextResponse(sitemap, {
+    headers: {
+      'Content-Type': 'application/xml',
+    },
+  })
+}
