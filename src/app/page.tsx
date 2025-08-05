@@ -340,7 +340,7 @@ export default function Home() {
             <h3 className="text-4xl font-bold text-center text-gray-800 mb-12">Site Plan</h3>
             <div className="relative max-w-4xl mx-auto">
               <img
-                src="/images/logo/siteplan2.png"
+                src="/public/images/logo/siteplan2.png"
                 alt="Site Plan"
                 className="w-full rounded-lg shadow-xl"
               />
