@@ -361,7 +361,7 @@ export default function Home() {
               { icon: "🍳", title: "Kitchen Fitted By", subtitle: "SIGNATURE", image: "/images/logo/kitchen.png" },
               { icon: "👨‍👩‍👧‍👦", title: "Family-Friendly Residences", image: "/images/logo/family_friend.png" },
               { icon: "🐕", title: "Pet Friendly Facilities", image: "/images/logo/pets.png" },
-              { icon: "🌱", title: "GreenRE Certified Building", image: "/images/logo/green_re.png" }
+              { icon: "🌱", title: "GreenRE Certified Building", image: "/images/logo/GREEN_RE_v2.png" }
             ].map((feature, index) => (
               <StaggeredItem key={index}>
                 <Card className="text-center p-6 hover:shadow-xl transition-all duration-300 hover-scale group">
