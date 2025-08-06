@@ -31,6 +31,24 @@ export default function RootLayout({
           crossOrigin="anonymous"
           src="//unpkg.com/same-runtime/dist/index.global.js"
         />
+        <Script
+  crossOrigin="anonymous"
+  src="//unpkg.com/same-runtime/dist/index.global.js"
+/>
+
+{/* Google Ads Global Site Tag (gtag.js) */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17443277324"></script>
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17443277324');
+    `,
+  }}
+/>
+
       </head>
       <body suppressHydrationWarning className="antialiased">
         <ClientBody>{children}</ClientBody>
