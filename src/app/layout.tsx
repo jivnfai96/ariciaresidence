@@ -22,20 +22,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
           strategy="beforeInteractive"
         />
+{/* Google Analytics / Ads（G-OFQNQ1FKDX） */}
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-OFQNQ1FKDX"
+  strategy="beforeInteractive"
+/>
+<Script id="ga-gtag-init" strategy="beforeInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-OFQNQ1FKDX');
+  `}
+</Script>
 
-        {/* Google Analytics / Ads（G-OFQNQ1FKDX） */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-OFQNQ1FKDX"
-          strategy="afterInteractive"
-        />
-        <Script id="ga-gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-OFQNQ1FKDX');
-          `}
-        </Script>
       </head>
 
       <body suppressHydrationWarning className="antialiased">
