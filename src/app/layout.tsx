@@ -27,27 +27,26 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-        <Script
-          crossOrigin="anonymous"
-          src="//unpkg.com/same-runtime/dist/index.global.js"
-        />
-        <Script
-  crossOrigin="anonymous"
-  src="//unpkg.com/same-runtime/dist/index.global.js"
-/>
+        <head>
+  {/* same-runtime 脚本 */}
+  <script
+    crossOrigin="anonymous"
+    src="//unpkg.com/same-runtime/dist/index.global.js"
+  ></script>
 
-{/* Google Ads Global Site Tag (gtag.js) */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17443277324"></script>
-<script
-  dangerouslySetInnerHTML={{
-    __html: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-17443277324');
-    `,
-  }}
-/>
+  {/* Google Ads / Analytics 追踪代码 */}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-OFQNQ1FKDX"></script>
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-OFQNQ1FKDX');
+      `,
+    }}
+  />
+</head>
 
       </head>
       <body suppressHydrationWarning className="antialiased">
